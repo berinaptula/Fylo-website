@@ -1,0 +1,107 @@
+.footer {
+    margin-top: 20rem;
+    background-color: $footer-bg;
+
+    &__cta {
+        width: 60%;
+        background-color: $intro-email-signup-bg;
+        padding: 3rem 7rem;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.3);
+
+        &--heading {
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+
+        &--paragraph {
+            margin-bottom: 3rem;
+        }
+
+        form {
+            display: flex;
+
+            input {
+                flex: 5;
+                margin-right: 2rem;
+                padding: 1rem 3rem;
+                border-radius: 2rem;
+                color: rgba($color: #000000, $alpha: 0.8);
+                outline: none;
+                border: none;
+            }
+
+            button {
+                flex: 2;
+                outline: none;
+                border: none;
+                border-radius: 2rem;
+                padding: 1rem 2rem;
+                color: white;
+                background-color: $cta-blue-gradient;
+            }
+        }
+    }
+
+    &__logo {
+        transform: translateY(-6rem);
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-5rem);
+
+        &--location {
+            width: 30%;
+            display: flex;
+
+        }
+
+        &--icon {
+            font-size: 1.8rem;
+            margin-right: 1rem;
+        }
+
+        &--phone-email {}
+
+        &--phone-links {}
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+
+                list-style: none;
+                font-size: 1.6rem;
+
+                a,
+                a:active,
+                a:visited {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &--social-media {
+
+            ul {
+                flex-direction: row;
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
