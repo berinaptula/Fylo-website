@@ -1,0 +1,53 @@
+.testimonials {
+    margin: 10rem auto;
+    display: flex;
+    position: relative;
+    width: 90%;
+
+    &__icon {
+        position: absolute;
+        top: -35px;
+        left: -15px;
+    }
+}
+
+.testimonial {
+    background-color: $intro-email-signup-bg;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &__text {
+        padding-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+
+        &--photo {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+            display: block;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
