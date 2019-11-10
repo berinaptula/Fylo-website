@@ -32,3 +32,8 @@ body {
     background-size: 100%;
     background-color: $intro-email-signup-bg;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

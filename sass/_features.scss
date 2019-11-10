@@ -1,0 +1,35 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+
+    &__feature {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 8rem;
+
+        &--icon {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+
+            img {
+                align-self: center;
+            }
+        }
+
+        &--heading {
+            margin-bottom: 1rem;
+        }
+
+        &--paragraph {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
