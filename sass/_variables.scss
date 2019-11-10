@@ -1,0 +1,18 @@
+// Primary colors
+// - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+// - Dark Blue (main background): hsl(218, 28%, 13%)
+// - Dark Blue (footer background): hsl(216, 53%, 9%)
+// - Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+$intro-email-signup-bg : hsl(217, 28%, 15%);
+$main-bg : hsl(218, 28%, 13%);
+$footer-bg : hsl(216, 53%, 9%);
+
+// Accent colors
+// - Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+// - Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+$cta-cyan-gradient : hsl(176, 68%, 64%);
+$cta-blue-gradient : hsl(198, 60%, 50%);
+
+// Neutral 
+$white :hsl(0, 0%, 100%);
