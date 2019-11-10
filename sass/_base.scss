@@ -18,9 +18,17 @@ body {
     font-family: "Open Sans", sans-serif;
     min-height: 100vh;
     background-color: $main-bg;
+    color: $white;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+.header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/media/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: $intro-email-signup-bg;
 }
