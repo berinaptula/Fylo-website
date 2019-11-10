@@ -1,0 +1,26 @@
+.nav-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 4.5rem 4rem;
+    justify-content: space-between;
+
+    &__logo {
+        width: 10rem;
+    }
+
+    &__navigation {
+        display: flex;
+
+        &--link,
+        &--link:visited {
+            text-decoration: none;
+            color: $white;
+            font-size: 1.4rem;
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
+}
