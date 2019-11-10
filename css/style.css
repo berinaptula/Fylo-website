@@ -155,7 +155,8 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  z-index: 2; }
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
   .testimonial:not(:last-child) {
     margin-right: 2rem; }
   .testimonial__text {
