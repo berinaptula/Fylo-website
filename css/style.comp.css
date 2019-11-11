@@ -36,6 +36,9 @@ html {
   @media only screen and (max-width: 650px) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 47.5%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -72,6 +75,9 @@ body {
     margin: 0 auto;
     display: block;
     height: auto; }
+    @media only screen and (max-width: 1000px) {
+      .intro__illustration {
+        width: 70vw; } }
     @media only screen and (max-width: 650px) {
       .intro__illustration {
         width: 60vw; } }
@@ -237,8 +243,14 @@ body {
   align-items: center;
   padding: 4.5rem 4rem;
   justify-content: space-between; }
+  @media only screen and (max-width: 500px) {
+    .nav-bar {
+      padding: 3rem 2rem; } }
   .nav-bar__logo {
     width: 10rem; }
+    @media only screen and (max-width: 500px) {
+      .nav-bar__logo {
+        width: 7rem; } }
   .nav-bar__navigation {
     display: flex; }
     .nav-bar__navigation--link, .nav-bar__navigation--link:visited {
