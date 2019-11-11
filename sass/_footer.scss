@@ -11,6 +11,15 @@
         text-align: center;
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.3);
 
+        @media only screen and (max-width: $bp-md) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 3rem 3rem;
+        }
+
+
         &--heading {
             margin-bottom: 2rem;
             font-size: 3rem;
@@ -23,6 +32,10 @@
         form {
             display: flex;
 
+            @media only screen and (max-width: $bp-sm) {
+                flex-direction: column;
+            }
+
             input {
                 flex: 5;
                 margin-right: 2rem;
@@ -31,6 +44,12 @@
                 color: rgba($color: #000000, $alpha: 0.8);
                 outline: none;
                 border: none;
+
+                @media only screen and (max-width: $bp-sm) {
+                    flex: 1;
+                    margin-right: 0rem;
+                    margin-bottom: 1.6rem;
+                }
             }
 
             button {
@@ -41,12 +60,17 @@
                 padding: 1rem 2rem;
                 color: white;
                 background-color: $cta-blue-gradient;
+
+                @media only screen and (max-width: $bp-sm) {
+                    flex: 1;
+                }
             }
         }
     }
 
     &__logo {
         transform: translateY(-6rem);
+        margin: 0 2rem;
         margin-bottom: 1rem;
     }
 
@@ -54,11 +78,29 @@
         display: flex;
         justify-content: space-between;
         transform: translateY(-5rem);
+        margin: 0 2rem;
+
+        @media only screen and (max-width: $bp-md) {
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            flex-direction: column;
+        }
 
         &--location {
             width: 30%;
             display: flex;
 
+            @media only screen and (max-width: $bp-md) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-sm) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
         }
 
         &--icon {
@@ -66,9 +108,17 @@
             margin-right: 1rem;
         }
 
-        &--phone-email {}
+        &--phone-email {
+            @media only screen and (max-width: $bp-sm) {
+                margin-bottom: 4rem;
+            }
+        }
 
-        &--phone-links {}
+        &--links {
+            @media only screen and (max-width: $bp-sm) {
+                margin-bottom: 4rem;
+            }
+        }
 
         ul {
             display: flex;
@@ -92,13 +142,23 @@
         }
 
         &--social-media {
-
             ul {
                 flex-direction: row;
+
+                @media only screen and (max-width: $bp-sm) {
+                    justify-content: center;
+                }
 
                 li {
                     &:not(:last-child) {
                         margin-right: 1rem;
+                    }
+
+                    i {
+                        @media only screen and (max-width: $bp-sm) {
+                            font-size: 5rem;
+                        }
+
                     }
                 }
             }

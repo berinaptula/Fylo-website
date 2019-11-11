@@ -3,16 +3,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: calc(100vh - 12rem);
-    // width: 55%;
     align-self: center;
-
-
 
     &__illustration {
         width: 70rem;
         margin: 0 auto;
         display: block;
         height: auto;
+
+        @media only screen and (max-width: $bp-lg) {
+            width: 70vw;
+        }
+
+        @media only screen and (max-width: $bp-md) {
+            width: 60vw;
+        }
     }
 
     &__text {
@@ -29,6 +34,10 @@
             width: 50%;
             margin: 0 auto;
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-md) {
+                width: 75%;
+            }
         }
     }
 

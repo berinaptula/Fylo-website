@@ -12,6 +12,18 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-lg) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        font-size: 47.5%;
+    }
 }
 
 body {
@@ -27,6 +39,11 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("/media/images/bg-curvy-desktop.svg");
+
+    @media only screen and (max-width: $bp-sm) {
+        background-image: url("/media/images/bg-curvy-mobile.svg");
+    }
+
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
